@@ -1,7 +1,18 @@
-//Can you help your digital design faculty in correcting the assignment on number conversions by writing a program to convert a decimal number to its binary equivalent using a while loop.
-//Example, lets say input is 7, output should be 111
-
+#include<stdio.h>
 int main()
 {
-  return 0;
+    int num,i=1,bin=0,temp;
+    printf("Enter the number");
+    scanf("%d",&num);
+    while(num!=0)
+    {
+        temp=num%2;
+        bin+=(i*temp);
+        i*=10;
+        num/=2;
+        
+       
+    }
+    printf("\nBinary conversion of the number is : %d",bin);
+    return 1;
 }
